@@ -5,6 +5,8 @@ a { color: inherit; }
 main { overflow: clip; }
 .screen { position: relative; width: 100%; background: #05080c; scroll-margin-top: 72px; }
 .screenImage { display: block; width: 100%; height: auto; }
+.hero { min-height: 100vh; min-height: 100svh; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.hero .screenImage { width: auto; height: 100vh; height: 100svh; max-width: 100%; object-fit: contain; }
 .siteNav { position: fixed; z-index: 50; top: 14px; left: 50%; width: min(1180px, calc(100% - 28px)); min-height: 58px; transform: translate(-50%, -18px); opacity: 0; pointer-events: none; display: flex; align-items: center; gap: 24px; padding: 10px 14px 10px 20px; border: 1px solid rgba(255,255,255,.12); border-radius: 18px; background: rgba(5,8,12,.76); backdrop-filter: blur(18px); transition: .25s ease; box-shadow: 0 14px 50px rgba(0,0,0,.35); }
 .siteNavVisible { opacity: 1; transform: translate(-50%, 0); pointer-events: auto; }
 .navBrand { text-decoration: none; font-weight: 800; letter-spacing: .18em; }
